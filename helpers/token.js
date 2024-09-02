@@ -1,6 +1,7 @@
+require("dotenv").config();
 const jwt = require("jsonwebtoken");
 
-const sign = "testtest";
+const sign = process.env.JWT_SECRET;
 
 module.exports = {
   generate(data) {
